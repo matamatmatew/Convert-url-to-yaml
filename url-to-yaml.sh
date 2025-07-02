@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # ======================================================================
 # Skrip untuk setup menu "Convert Akun" OpenClash
