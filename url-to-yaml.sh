@@ -7,7 +7,7 @@
 
 # --- Konfigurasi LUA ---
 LUA_FILE_PATH="/usr/lib/lua/luci/controller/openclash.lua"
-LINE_TO_ADD_LUA='	entry({"admin", "services", "openclash", "converter"},template("openclash/converter"),_("Convert Akun"), 70).leaf = true'
+LINE_TO_ADD_LUA='	entry({"admin", "services", "openclash", "converter"},template("openclash/converter"),_("Convert Akun"), 72).leaf = true'
 TARGET_LINE=96
 
 # --- Konfigurasi HTML ---
