@@ -158,6 +158,10 @@ function parse_trojan($url) {
             'headers' => ['Host' => $query_params['host'] ?? $parsed_url['host']]
         ];
     }
+    if (($query_params['type'] ?? '') === 'grpc' || ($query_params['network'] ?? '') === 'grpc') {
+        $proxy['network'] = 'grpc';
+        $proxy['grpc-opts'] = ['grpc-service-name' => $query_params['serviceName'] ?? '/trojan'];
+    }
     $proxy['udp'] = true;
     return $proxy;
 }
